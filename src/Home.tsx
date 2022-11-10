@@ -677,6 +677,10 @@ const Home = (props: HomeProps) => {
                                                                     className="wp-image-4647 avia-img-lazy-loading-not-4647 avia_image"
                                                                     src={anime} alt=""
                                                                     title="Domein Bergen" height="289" width="300" /></div>
+                                                                     <button
+                                                                className="avia_iconbox_title" id="mint-btn-2" style={{ alignItems: "center"}}>{wallet ?
+                                                                    <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton /></WalletAmount> :
+                                                                    <ConnectButton>Connect Wallet</ConnectButton>}</button>
                                                         </div>
                                                     </div>
                                                     <section className="av_textblock_section">
